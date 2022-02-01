@@ -26,5 +26,11 @@ namespace Day_24_UserRegistration
             String EmailPattern = "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
             return Regex.IsMatch(email, EmailPattern);
         }
+
+        public bool MobileNum(String Mnum)
+        {
+            String MobileNumPattern = "^[9][1][7-9]{1}[0-9]{9}$";
+            return Regex.IsMatch(Mnum, MobileNumPattern);
+        }
     }
 }

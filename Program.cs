@@ -37,6 +37,15 @@ namespace Day_24_UserRegistration
             else
                 Console.WriteLine("Email ID Is Invalid");
 
+            //Uc4
+
+            Console.WriteLine("Enter Mobile No :");
+            String MNum = Console.ReadLine();
+            if (patternCheck.MobileNum(MNum))
+                Console.WriteLine("Mobile Number Is Valid");
+            else
+                Console.WriteLine("Mobile Number Is Invalid");
+
 
         }
     }
