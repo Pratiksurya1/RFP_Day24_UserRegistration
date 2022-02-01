@@ -64,6 +64,14 @@ namespace Day_24_UserRegistration
             else
                 Console.WriteLine("Password Is Invalid");
 
+            //Uc7
+
+            Console.WriteLine("Enter Password :");
+            String pass3 = Console.ReadLine();
+            if (patternCheck.PasswordRule3(pass3))
+                Console.WriteLine("Password Is Valid");
+            else
+                Console.WriteLine("Password Is Invalid");
 
 
         }

@@ -21,7 +21,7 @@ namespace Day_24_UserRegistration
             return Regex.IsMatch(name, LastNamePattern);
         }
 
-        public bool Email(String email) 
+        public bool Email(String email)
         {
             String EmailPattern = "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
             return Regex.IsMatch(email, EmailPattern);
@@ -43,6 +43,12 @@ namespace Day_24_UserRegistration
         {
             String PasswordRulePattern2 = "^(?=.*?[A-Z])[A-Za-z0-9@$!%*#?&]{8,}$";
             return Regex.IsMatch(pass, PasswordRulePattern2);
+        }
+
+        public bool PasswordRule3(String pass)
+        {
+            String PasswordRulePattern3 = "^(?=.*?[A-Z])[A-Za-z0-9@$!%*#?&]{8,}$";
+            return Regex.IsMatch(pass, PasswordRulePattern3);
         }
     }
 }
