@@ -40,7 +40,7 @@ namespace Day_24_UserRegistration
             //Uc4
 
             Console.WriteLine("Enter Mobile No :");
-            String MNum = Console.ReadLine();
+            String MNum = Console.ReadLine(); 
             if (patternCheck.MobileNum(MNum))
                 Console.WriteLine("Mobile Number Is Valid");
             else
