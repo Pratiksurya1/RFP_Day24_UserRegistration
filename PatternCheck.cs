@@ -32,5 +32,11 @@ namespace Day_24_UserRegistration
             String MobileNumPattern = "^[9][1][7-9]{1}[0-9]{9}$";
             return Regex.IsMatch(Mnum, MobileNumPattern);
         }
+
+        public bool PasswordRule1(String pass)
+        {
+            String PasswordRulePattern = "^[A-Za-z]{8,}$";
+            return Regex.IsMatch(pass, PasswordRulePattern);
+        }
     }
 }

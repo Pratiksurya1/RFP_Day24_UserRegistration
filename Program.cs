@@ -46,6 +46,15 @@ namespace Day_24_UserRegistration
             else
                 Console.WriteLine("Mobile Number Is Invalid");
 
+            //Uc5
+
+            Console.WriteLine("Enter Password :");
+            String pass1 = Console.ReadLine();
+            if (patternCheck.PasswordRule1(pass1))
+                Console.WriteLine("Password Is Valid");
+            else
+                Console.WriteLine("Password Is Invalid");
+
 
         }
     }
