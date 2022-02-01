@@ -81,6 +81,15 @@ namespace Day_24_UserRegistration
                 Console.WriteLine("Password Is Valid");
             else
                 Console.WriteLine("Password Is Invalid");
+
+            //Uc9
+
+            Console.WriteLine("Enter Email Sample :");
+            String emailSample = Console.ReadLine();
+            if (patternCheck.EmailSamples(emailSample))
+                Console.WriteLine("Email Is Valid");
+            else
+                Console.WriteLine("Email Is Invalid");
         }
     }
 }

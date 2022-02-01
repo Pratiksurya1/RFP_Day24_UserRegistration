@@ -53,8 +53,14 @@ namespace Day_24_UserRegistration
 
         public bool PasswordRule4(String pass)
         {
-            String PasswordRulePattern4 = "^(?=.*?[A-Z])[A-Za-z0-9@$!%*#?&]{8,}$";
+            String PasswordRulePattern4 = "^[A-Za-z0-9]*[@$!%*#?&]{1}[A-Za-z0-9]*$";
             return Regex.IsMatch(pass, PasswordRulePattern4);
+        }
+
+        public bool EmailSamples(String email)
+        {
+            String EmailSample= "^[0-9a-zA-Z]+[.+-_]{0,1}[0-9a-zA-Z]+[@][0-9a-zA-Z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";
+            return Regex.IsMatch(email,EmailSample);
         }
     }
 }
