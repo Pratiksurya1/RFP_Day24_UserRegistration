@@ -50,5 +50,11 @@ namespace Day_24_UserRegistration
             String PasswordRulePattern3 = "^(?=.*?[A-Z])[A-Za-z0-9@$!%*#?&]{8,}$";
             return Regex.IsMatch(pass, PasswordRulePattern3);
         }
+
+        public bool PasswordRule4(String pass)
+        {
+            String PasswordRulePattern4 = "^(?=.*?[A-Z])[A-Za-z0-9@$!%*#?&]{8,}$";
+            return Regex.IsMatch(pass, PasswordRulePattern4);
+        }
     }
 }
