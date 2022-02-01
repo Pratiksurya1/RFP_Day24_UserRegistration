@@ -27,6 +27,17 @@ namespace Day_24_UserRegistration
                 Console.WriteLine("Last Name Is Valid");
             else
                 Console.WriteLine("Last Name Is Invalid");
+
+            //Uc3
+
+            Console.WriteLine("Enter Email ID :");
+            String MailId = Console.ReadLine();
+            if (patternCheck.Email(MailId))
+                Console.WriteLine("Email ID Is Valid");
+            else
+                Console.WriteLine("Email ID Is Invalid");
+
+
         }
     }
 }
