@@ -10,11 +10,15 @@ namespace Day_24_UserRegistration
     internal class PatternCheck
     {
         public static string REGEX = "^[A-Z]{1}[A-Za-z]{2,}$";
-
-        public bool FirstName(string name) 
+        public bool FirstName(string name)
         {
             return Regex.IsMatch(name, REGEX);
         }
 
+        public bool LastName(string name)
+        {
+            string LastNamePattern = "^[A-Z]{1}[A-Za-z]{2,}$";
+            return Regex.IsMatch(name, LastNamePattern);
+        }
     }
 }
