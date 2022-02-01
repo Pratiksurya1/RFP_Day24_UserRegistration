@@ -9,11 +9,9 @@ namespace Day_24_UserRegistration
 {
     internal class PatternCheck
     {
-
-        //pattern for valid name
         public static string REGEX = "^[A-Z]{1}[A-Za-z]{2,}$";
 
-        public bool FirstName(string name)
+        public bool FirstName(string name) 
         {
             return Regex.IsMatch(name, REGEX);
         }
