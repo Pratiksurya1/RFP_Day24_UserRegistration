@@ -91,11 +91,25 @@ namespace Day_24_UserRegistration
             //else
             //    Console.WriteLine("Email Is Invalid");
 
-            //Uc10
+            // Uc10
 
-            UserEntry userEntry = new UserEntry("sad");
+            //UserEntry userEntry = new UserEntry("sad");
 
-            userEntry.Validate();
+            //userEntry.Validate();
+
+            //Uc 11
+
+            Console.WriteLine("Enter how many email accounts do you want validate");
+            int num=Int32.Parse(Console.ReadLine());
+            for(int i = 1; i <= num; i++)
+            {
+                Console.WriteLine("Enter Email ID :");
+                String MailId = Console.ReadLine();
+                if (patternCheck.Email(MailId))
+                    Console.WriteLine("Email ID Is Valid\n");
+                else
+                    Console.WriteLine("Email ID Is Invalid\n");
+            }
         }
     }
 }
