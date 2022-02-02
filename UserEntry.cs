@@ -22,9 +22,9 @@ namespace Day_24_UserRegistration
                 Console.WriteLine("Enter First Name :");
                 string name = Console.ReadLine();
                 if (FirstName(name))
-                     Console.WriteLine("First Name Is Valid");
-                 else
-                     Console.WriteLine("First Name Is Invalid");
+                    Console.WriteLine("First Name Is Valid");
+                else
+                    Console.WriteLine("First Name Is Invalid");
 
                 Console.WriteLine("Enter Last Name :");
                 String lastName = Console.ReadLine();

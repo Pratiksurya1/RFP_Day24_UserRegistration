@@ -9,10 +9,11 @@ namespace Day_24_UserRegistration
 {
     public class PatternCheck
     {
-        public static string REGEX = "^[A-Z]{1}[A-Za-z]{2,}$";
+      
         public bool FirstName(string name)
         {
-            return Regex.IsMatch(name, REGEX);
+            String FirstNamePattern= "^[A-Z]{1}[A-Za-z]{2,}$";          
+            return Regex.IsMatch(name, FirstNamePattern);
         }
 
         public bool LastName(string name)
@@ -62,5 +63,11 @@ namespace Day_24_UserRegistration
             String EmailSample= "^[0-9a-zA-Z]+[.+-_]{0,1}[0-9a-zA-Z]+[@][0-9a-zA-Z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";
             return Regex.IsMatch(email,EmailSample);
         }
+
+        public Func<string, bool> validateFirstName = FirstName => Regex.IsMatch(FirstName, "^[A-Z]{1}[A-Za-z]{2,}$");
+        public Func<string, bool> validateLastName = LastName => Regex.IsMatch(LastName, "^[A-Z]{1}[A-Za-z]{2,}$");
+        public Func<string, bool> validateEmail = Email => Regex.IsMatch(Email, "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$");
+        public Func<string, bool> validateMobile = MobileNo => Regex.IsMatch(MobileNo, "^[9][1][7-9]{1}[0-9]{9}$");
+        public Func<string, bool> validatePassword = Password => Regex.IsMatch(Password, "^[A-Za-z0-9]*[@$!%*#?&]{1}[A-Za-z0-9]*$");
     }
 }

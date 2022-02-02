@@ -6,9 +6,7 @@ namespace Day_24_UserRegistration
     public  class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Welcome to User Reg using Lambda Expressions!");
-            
+        {   
             PatternCheck patternCheck = new PatternCheck();
 
             //Uc1
