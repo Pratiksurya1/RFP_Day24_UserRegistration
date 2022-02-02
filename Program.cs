@@ -11,78 +11,78 @@ namespace Day_24_UserRegistration
             
             PatternCheck patternCheck = new PatternCheck();
 
-            ////Uc1
-            //Console.WriteLine("Enter First Name :");
-            //string name = Console.ReadLine();
-            //if (patternCheck.FirstName(name))
-            //    Console.WriteLine(" First Name Is Valid");
-            //else
-            //    Console.WriteLine("First Name Is Invalid");
+            //Uc1
+            Console.WriteLine("Enter First Name :");
+            string name = Console.ReadLine();
+            if (patternCheck.FirstName(name))
+                Console.WriteLine(" First Name Is Valid");
+            else
+                throw new ValidatorException(ValidatorException.ExcetionType.Invalid_FirstName_Exceotion, "First name Is Invalid");
 
-            ////Uc2 
+            //Uc2 
 
-            //Console.WriteLine("Enter Last Name Name :");
-            //String lastName= Console.ReadLine();
-            //if (patternCheck.LastName(lastName))
-            //    Console.WriteLine("Last Name Is Valid");
-            //else
-            //    Console.WriteLine("Last Name Is Invalid");
+            Console.WriteLine("Enter Last Name Name :");
+            String lastName = Console.ReadLine();
+            if (patternCheck.LastName(lastName))
+                Console.WriteLine("Last Name Is Valid");
+            else
+                throw new ValidatorException(ValidatorException.ExcetionType.Invalid_LastName_Exceotion, "Last Name Is Invalid ");
 
-            ////Uc3
+            //Uc3
 
-            //Console.WriteLine("Enter Email ID :");
-            //String MailId = Console.ReadLine();
-            //if (patternCheck.Email(MailId))
-            //    Console.WriteLine("Email ID Is Valid");
-            //else
-            //    Console.WriteLine("Email ID Is Invalid");
+            Console.WriteLine("Enter Email ID :");
+            String MailId = Console.ReadLine();
+            if (patternCheck.Email(MailId))
+                Console.WriteLine("Email ID Is Valid");
+            else
+                throw new ValidatorException(ValidatorException.ExcetionType.Invalid_EmailID_Exceotion, "Email ID Is Invalid");
 
-            ////Uc4
+            //Uc4
 
-            //Console.WriteLine("Enter Mobile No :");
-            //String MNum = Console.ReadLine(); 
-            //if (patternCheck.MobileNum(MNum))
-            //    Console.WriteLine("Mobile Number Is Valid");
-            //else
-            //    Console.WriteLine("Mobile Number Is Invalid");
+            Console.WriteLine("Enter Mobile No :");
+            String MNum = Console.ReadLine();
+            if (patternCheck.MobileNum(MNum))
+                Console.WriteLine("Mobile Number Is Valid");
+            else
+                throw new ValidatorException(ValidatorException.ExcetionType.Invalid_MobileNumber_Exceotion, "Mobile Number Is Invalid");
 
-            ////Uc5
+            //Uc5
 
-            //Console.WriteLine("Enter Password :");
-            //String pass1 = Console.ReadLine();
-            //if (patternCheck.PasswordRule1(pass1))
-            //    Console.WriteLine("Password Is Valid");
-            //else
-            //    Console.WriteLine("Password Is Invalid");
+            Console.WriteLine("Enter Password :");
+            String pass1 = Console.ReadLine();
+            if (patternCheck.PasswordRule1(pass1))
+                Console.WriteLine("Password Is Valid");
+            else
+                throw new ValidatorException(ValidatorException.ExcetionType.Invalid_Password_Exceotion, "Password Is Invalid");
 
-            ////Uc6
+            //Uc6
 
-            //Console.WriteLine("Enter Password :");
-            //String pass2 = Console.ReadLine();
-            //if (patternCheck.PasswordRule2(pass2))
-            //    Console.WriteLine("Password Is Valid");
-            //else
-            //    Console.WriteLine("Password Is Invalid");
+            Console.WriteLine("Enter Password :");
+            String pass2 = Console.ReadLine();
+            if (patternCheck.PasswordRule2(pass2))
+                Console.WriteLine("Password Is Valid");
+            else
+                throw new ValidatorException(ValidatorException.ExcetionType.Invalid_Password_Exceotion, "Password Is Invalid");
 
-            ////Uc7
+            //Uc7
 
-            //Console.WriteLine("Enter Password :");
-            //String pass3 = Console.ReadLine();
-            //if (patternCheck.PasswordRule3(pass3))
-            //    Console.WriteLine("Password Is Valid");
-            //else
-            //    Console.WriteLine("Password Is Invalid");
+            Console.WriteLine("Enter Password :");
+            String pass3 = Console.ReadLine();
+            if (patternCheck.PasswordRule3(pass3))
+                Console.WriteLine("Password Is Valid");
+            else
+                throw new ValidatorException(ValidatorException.ExcetionType.Invalid_Password_Exceotion, "Password Is Invalid");
 
-            ////Uc8
+            //Uc8
 
-            //Console.WriteLine("Enter Password :");
-            //String pass4 = Console.ReadLine();
-            //if (patternCheck.PasswordRule4(pass4))
-            //    Console.WriteLine("Password Is Valid");
-            //else
-            //    Console.WriteLine("Password Is Invalid");
+            Console.WriteLine("Enter Password :");
+            String pass4 = Console.ReadLine();
+            if (patternCheck.PasswordRule4(pass4))
+                Console.WriteLine("Password Is Valid");
+            else
+                throw new ValidatorException(ValidatorException.ExcetionType.Invalid_Password_Exceotion, "Password Is Invalid");
 
-            ////Uc9
+            //Uc9
 
             //Console.WriteLine("Enter Email Sample :");
             //String emailSample = Console.ReadLine();
@@ -99,17 +99,17 @@ namespace Day_24_UserRegistration
 
             //Uc 11
 
-            Console.WriteLine("Enter how many email accounts do you want validate");
-            int num=Int32.Parse(Console.ReadLine());
-            for(int i = 1; i <= num; i++)
-            {
-                Console.WriteLine("Enter Email ID :");
-                String MailId = Console.ReadLine();
-                if (patternCheck.Email(MailId))
-                    Console.WriteLine("Email ID Is Valid\n");
-                else
-                    Console.WriteLine("Email ID Is Invalid\n");
-            }
+            //Console.WriteLine("Enter how many email accounts do you want validate");
+            //int num=Int32.Parse(Console.ReadLine());
+            //for(int i = 1; i <= num; i++)
+            //{
+            //    Console.WriteLine("Enter Email ID :");
+            //    String MailId = Console.ReadLine();
+            //    if (patternCheck.Email(MailId))
+            //        Console.WriteLine("Email ID Is Valid\n");
+            //    else
+            //        Console.WriteLine("Email ID Is Invalid\n");
+            //}
         }
     }
 }
